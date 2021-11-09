@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+    padding: 40px;
+    border: black 2px solid;
+    background-color: grey;
+}
+
+.internal-box{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    padding: 30px 10px;
+    border: black 2px solid;
+    font-size: 12px;
+    text-align: center;
+}
+
+#div1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#div2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#div3{
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

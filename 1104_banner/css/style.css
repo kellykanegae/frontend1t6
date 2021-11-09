@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+div {
+    width: 1280x;
+    height: 500px;
+
+    background-image: url(https://picsum.photos/id/16/1280/720); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 215px;
+}
+
+h2 {
+    color: white;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+button {
+    box-sizing: border-box;
+    background-color: white);
+    border: 1.5px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
