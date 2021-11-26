@@ -3,6 +3,14 @@ html,
 body {
     padding: 0;
     margin: 0;
+    background-image: url('https://www.galwan.com.br/wp-content/uploads/2017/12/morar-em-vila-velha-750x500.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
 }
 
 header {
@@ -18,17 +26,6 @@ h1 {
     color: white;
     margin: 0;
     padding: 10px;
-}
-
-body {
-    background-image: url('https://www.galwan.com.br/wp-content/uploads/2017/12/morar-em-vila-velha-750x500.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: black;
 }
 
 iframe {
