@@ -39,51 +39,55 @@
                 </ul>
     
             </div>
-
-            <div class="itemform">
+            
+            <div class="item">
                 <form action="cadastrar" name="Cadastro Usuário" method= "post">
 
-                        <p class="formTitle"> Queremos saber mais sobre você! </p>
+                    <p class="formTitle"> Queremos saber mais sobre você! </p>
         
-                        <div>
-                            <label for="nome"> Nome: </label>
-                            <input type="text" name ="nome" min="100chars" id= "nome" placeholder="Insira o nome">
-                        </div>
+                    <div>
+                        <label for="nome"> Nome:* </label>
+                        <input type="text" name ="nome" min="100chars" id= "nome" required placeholder="Insira o nome">
+                    </div>
         
-                        <div>
-                            <label for="email"> Email: </label>
-                            <input type="text" name ="email" id="email" placeholder="Insira o email">
-                        </div>
+                    <div>
+                        <label for="email"> Email:* </label>
+                        <input type="text" name ="email" id="email" required placeholder="Insira o email">
+                    </div>
         
-                        <div>
-                            <label for="telefone"> Telefone: </label>
-                            <input type="text" name ="telefone" id= "telefone" placeholder="Insira o telefone">
-                        </div>
+                    <div>
+                        <label for="telefone"> Telefone:* </label>
+                        <input type="text" name ="telefone" id= "telefone"  requiredplaceholder="Insira o telefone">
+                    </div>
         
-                        <div>
-                            <label for="dataNascimento"> Data de Nascimento: </label>
-                            <input type="date" name ="dataNascimento" id= "dataNascimento" placeholder="Insira a data de nascimento">
-                        </div>
+                    <div>
+                        <label for="dataNascimento"> Data de Nascimento:* </label>
+                        <input type="date" name ="dataNascimento" id= "dataNascimento" required placeholder="Insira a data de nascimento">
+                    </div>
 
-                        <div>
-                            <p> É maior de idade? </p>
-                            <input type="radio" name ="maiorIdade" id= "maiorsim" checked> <label for="maiorsim"> Sim </label>
-                            <input type="radio" name ="maiorIdade" id= "maiornao"> <label for="maiornao"> Não </label>
-                        </div>
+                    <div>
+                        <p> É maior de idade?* </p>
+                        <input type="radio" name ="maiorIdade" id= "maiorsim" required checked> <label for="maiorsim"> Sim </label>
+                        <input type="radio" name ="maiorIdade" id= "maiornao" required> <label for="maiornao"> Não </label>
+                    </div>
                         
-                        <div class="checkbox">
-                            <p> Quais locais tem interesse em conhecer? </p>
+                    <div class="checkbox">
+                        <p> Quais locais tem interesse em conhecer? </p>
                             <input type="checkbox" name="locais" id="locmorro"> <label for="locmorro">Morro do Moreno</label>
                             <input type="checkbox" name="locais" id="locconvento"> <label for="locconvento">Convento da Penha</label>
+                        <div>
                             <input type="checkbox" name="locais" id="locfarol"> <label for="locfarol">Farol de Santa Luzia</label>
                             <input type="checkbox" name="locais" id="locmuseu"> <label for="locmuseu">Museu da Vale</label>
+                        </div>
+                        <div>
                             <input type="checkbox" name="locais" id="locfabrica"> <label for="locfabrica">Fábrica da Garoto</label>
                         </div>
+                    </div>
 
-                        <div>
-                            <label for="visita"> 
-                                <p> Qual o motivo de sua visita? </p> 
-                            </label>
+                    <div>
+                        <label for="visita"> 
+                            <p> Qual o motivo de sua visita?  </p> 
+                        </label>
                             <select name="visita" id="visita">
                               <option value="0">Selecione uma opção</option>
                               <option value="1">Turismo</option>
@@ -91,23 +95,30 @@
                               <option value="3">Estudo</option>
                               <option value="4">Outros</option>
                             </select>
-                        </div>
+                    </div>
 
-                        <div class="checks">
-                            <input type="checkbox" name ="aceito" id="aceito" required> <label for="checkbox"> Li e aceito as condições* </label>
-                        </div>
+                    <div class="checks">
+                        <input type="checkbox" name ="aceito" id="aceito" required> <label for="checkbox"> Li e aceito as condições.* </label>
+                    </div>
                 
-                        <div class="checks">
-                            <input type="checkbox" name ="newsletter" id="newsletter" checked> <label for="checkbox"> Quero receber emails Promocionais </label> 
-                        </div>
+                    <div class="checks">
+                        <input type="checkbox" name ="newsletter" id="newsletter" checked> <label for="checkbox"> Quero receber emails promocionais. </label> 
+                    </div>
+
+                    <div class="required">
+                    * Respostas necessárias.
+                    </div>
                         
-                        <div class="buttons-div">
-                            <button type="reset" id="limpar"> Limpar </button>
-                            <button type="send" id="enviar"> Enviar </button> 
-                        </div>
+                    <div class="buttons-div">
+                        <button type="reset" id="limpar"> Limpar </button>
+                        <button type="send" id="enviar"> Enviar </button> 
+                    </div>
 
                 </form>
+
             </div>
+        
+        </div>
 
         <div>
             <a href="https://www.whatsapp.com/" target="_blank"><img src="img/whatsapp-logo.png" class="fale-conosco"></a>
