@@ -1,0 +1,326 @@
+@import 'variaveis';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    font-family: Roboto;
+    background-color: $primary-color;
+    color: $secondary-color;
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+
+    .nav-link {
+        height: 50px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease;
+        padding: 40px 8px;
+
+        &:hover {
+            background-color: $nois-red;
+            color: $primary-color;
+        }
+    }
+    
+    #logo {
+        width: 130px;
+    }
+}
+
+.modal > div {
+    width: 95%;
+    border-radius: 12px;
+
+    .modal-content {
+        border: 0;
+    }
+    
+    .modal-header {
+        border: 0;
+    }
+    
+    .modal-footer {
+        border: 0;
+    }
+
+    .modal-logo {
+        width: 50%;
+        margin: auto;
+    }
+
+    input {
+        border: 1px solid #A4A4A4;
+        border-radius: 12px;
+    }
+
+    .form-group {
+        width: 90%;
+        border: 0;
+        margin: auto;
+
+    }
+}
+
+.modal-button {
+    width: 90%;
+    height: 60px;
+    background:$nois-green;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 0;
+    margin: auto;
+
+    color: $primary-color;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: $nois-dark-green
+    }
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+
+    .parallax {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-hero-original.jpg);
+        height: 100%;
+      
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 52px;
+        line-height: 64px;
+        color: $nois-red;
+        padding: 50% 0 0 10%;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: $primary-color;
+
+        padding: 0 10% 10% 10%;
+    }
+
+    .banner-button {
+        width: 310px;
+        height: 70px;
+        background: rgba(51, 187, 105, 0.05);
+        border: 1px solid $nois-green;
+        box-sizing: border-box;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        color: $primary-color;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $nois-green;
+        }
+    }
+
+}
+
+
+h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    margin: 40px 0 ;
+}
+
+#itens {
+    margin: auto;
+}
+
+.card {
+    border-radius: 12px;
+    background-color: $nois-grey;
+    width: 100%;
+    height: 490px;
+    border: 0;
+    box-shadow: rgba(128, 128, 128, 0.5) 5px 5px 15px;
+    margin-bottom: 20%;
+
+    .card-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .card-text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        border-radius: 12px;
+        z-index: 1;
+    }
+    
+    .card-body {
+        border-radius: 12px;
+        background-color: $nois-grey;
+        position: relative;
+        top: -5em;
+        z-index: 2;
+    }
+    
+    .card-button {
+        width: 80%;
+        height: 60px;
+        background:$nois-green;
+        box-sizing: border-box;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        color: $primary-color;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $nois-dark-green
+        }
+    }
+
+}
+
+
+footer {
+    background-color: $secondary-color;
+    
+    .aluno {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .aluno-nome {
+            color: $primary-color;
+            font-size: 28px;
+            margin-top: 50px;
+            margin-bottom: 2px;
+        }
+    
+        .aluno-descricao {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .social {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .aluno-2 {
+        @media(min-width: 1280px) {
+            text-align: center;
+        }
+    }
+
+    .aluno-3 {
+        @media(min-width: 1280px) {
+            text-align: right;
+        }
+    }
+
+    .info {
+        font-size: 18px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+    }
+
+}
+
+
+// CSS para página movie-details.html
+
+.movie-banner-duna {
+    width: 100%;
+    height: 649px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner-movie-detail-duna.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.movie-banner-viuva {
+    width: 100%;
+    height: 649px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner-movie-detail-viuva.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.movie-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(min-width: 1280px) {
+        flex-wrap: nowrap;
+    }
+
+    .movie-info-item:nth-child(1) {
+        padding-right: 150px;
+        padding-bottom: 20px;
+    }
+
+    .movie-info-item:nth-child(2) {
+        padding-bottom: 20px;
+    }
+}
+
+.movie-trailer-titulo {
+    margin-top: 20px;
+}
+
+.movie-iframe {
+    height: 300px;
+    margin: 10px 0 50px;
+
+    @media(min-width: 1280px) {
+        height: 600px;
+    }
+}
